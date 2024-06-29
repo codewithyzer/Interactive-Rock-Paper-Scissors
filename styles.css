@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
+* {
+  font-family: Montserrat;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(39, 38, 38);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 45px;
+  font-style: italic;
+  color: whitesmoke;
+  margin-top: 60px;
+}
+
+.versus {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vs {
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: 800;
+  font-style: italic;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.player-container, .computer-container {
+  width: 300px;
+  height: 200px;
+  background-color: aliceblue;
+  padding: 10px;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.player-container {
+  background-color: rgb(30, 161, 205);
+}
+
+.computer-container {
+  background-color: rgb(254, 49, 49);
+}
+
+.buttons, .computer-choice {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.buttons button {
+  background-color: transparent;
+  margin-right: 20px;
+  color: whitesmoke;
+  font-size: 60px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.buttons button:hover {
+  transform: translateY(-6px);
+}
+
+.buttons button:active {
+  opacity: 0.6;
+}
+
+.computer-choice {
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.computer-choice i {
+  margin-right: 20px;
+  color: whitesmoke;
+  font-size: 60px;
+}
+
+.player-score {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.computer-score{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  margin-top: 40px;
+  padding-right: 20px;
+}
+
+#won {
+  display: none;
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+#lose {
+  display: none;
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+#draw {
+  display: none;
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+#player-wins {
+  display: none;
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+#computer-wins {
+  display: none;
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+#restart {
+  color: rgb(15, 15, 15);
+  font-size: 25px;
+  font-weight: 700;
+  padding: 12px 20px;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: rgb(121, 255, 121);
+  transition: all 0.3s ease 0s;
+}
+
+#autoplay {
+  color: rgb(15, 15, 15);
+  font-size: 25px;
+  font-weight: 700;
+  padding: 12px 20px;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  transition: all 0.3s ease 0s;
+}
+
+#autoplay:hover {
+  opacity: 0.7;
+}
+
+#autoplay:active {
+  box-shadow: none;
+  margin-top: 35px;
+  margin-left: 5px;
+}
+
+#restart:hover {
+  background-color: rgb(102, 210, 102);
+}
+
+#restart:active {
+  box-shadow: none;
+  margin-top: 35px;
+  margin-left: 5px;
+}
+
+.help {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#help {
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 30px;
+}
+
+.instruction {
+  transition: all 0.4s ease 0s;
+  display: none;
+  position: fixed;
+  background-color: rgba(245, 245, 245);
+  width: 400px;
+  font-size: 25px;
+  font-weight: 500px;
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  top: 60px;
+  right: 90px;
+}
+
+#close-button {
+  position: absolute;
+  background-color: transparent;
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  border: none;
+  border-radius: 20px;
+  top: -7px;
+  right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+#close-button:hover {
+  color: rgb(254, 49, 49);
+}
+
+#close-button:hover {
+  opacity: 0.7;
+}

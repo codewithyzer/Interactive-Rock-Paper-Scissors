@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <div class="help">
+      <button id="help">Help?</button>
+    </div>
+    <div class="instruction" id="instruction">
+      <strong>Welcome to Rock, Paper,  Scissor.</strong> First to reach 5 score wins! You can press the "Restart scores" button to bring scores back to zero.
+      <button id="close-button">&#215;
+      </button>
+    </div>
+    <div class="game">
+      <h1 class="game-title">Rock, Paper, Scissor!</h1>
+      <div class="versus">
+        <div class="player-container">
+          PLAYER
+          <div class="buttons">
+            <button id="rock-player" value="rock">
+              <i class="fa-solid fa-hand-fist"></i>
+            </button>
+            <button id="paper-player" value="paper">
+              <i class="fa-solid fa-hand"></i>
+            </button>
+            <button id="scissor-player" value="scissor">
+              <i class="fa-solid fa-hand-scissors"></i>
+            </button>
+          </div>
+          <div class="player-score">
+            <p>score: <span id="player-score"></span></p>
+          </div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="computer-container">
+          COMPUTER
+          <div class="computer-choice">
+            <i class="fa-solid fa-hand-fist" id="rock-computer"></i>
+            <i class="fa-solid fa-hand" id="paper-computer"></i>
+            <i class="fa-solid fa-hand-scissors" id="scissor-computer"></i>
+          </div>
+          <div class="computer-score">
+            <p>score: <span id="computer-score"></span></p>
+          </div>
+        </div>
+      </div>
+      <div id="won">You won!</div>
+      <div id="lose">You lose!</div>
+      <div id="draw">It's a draw!</div>
+      <div id="player-wins">Player wins!</div>
+      <div id="computer-wins">Computer wins!</div>
+      <button id="autoplay">Autoplay</button>
+      <button id="restart">Restart scores</button>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
