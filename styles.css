@@ -34,6 +34,13 @@ h1 {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .versus {
+    flex-direction: column;
+    gap: 20px; /* Optional: adds spacing between items when in column layout */
+  }
+}
+
 .vs {
   color: whitesmoke;
   font-size: 35px;
@@ -43,7 +50,8 @@ h1 {
   margin-right: 30px;
 }
 
-.player-container, .computer-container {
+.player-container,
+.computer-container {
   width: 300px;
   height: 200px;
   background-color: aliceblue;
@@ -62,7 +70,8 @@ h1 {
   background-color: rgb(254, 49, 49);
 }
 
-.buttons, .computer-choice {
+.buttons,
+.computer-choice {
   display: flex;
   margin-top: 30px;
   justify-content: center;
@@ -108,7 +117,7 @@ h1 {
   padding-right: 20px;
 }
 
-.computer-score{
+.computer-score {
   display: flex;
   justify-content: flex-end;
   font-size: 15px;
